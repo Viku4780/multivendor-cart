@@ -94,6 +94,12 @@ npm run dev
 ```
 
 
+## ScreenShots
+
+![alt text](image-1.png)
+![alt text](image.png)
+
+
 ## 🔮 Future Improvements
 * 🧾 Invoice generation
 * 📦 Advanced order tracking
