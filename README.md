@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 MultiVendor Cart
 
-## Getting Started
+A full-featured Multi-Vendor E-commerce Cart System that allows multiple sellers to list products and customers to browse, add to cart, and place orders seamlessly.
 
-First, run the development server:
+This project demonstrates how a marketplace like Amazon or Flipkart works under the hood, where multiple vendors manage their own products while users shop from a unified platform.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Features
+* 👤 User Authentication
+  * Register / Login functionality
+  * Secure session handling
+* 🏪 Multi-Vendor System
+  * Multiple sellers can add and manage products
+  * Vendor-specific product listings
+* 🛍️ Product Management
+  * Add, update, delete products
+  * Categorization support
+* 🛒 Shopping Cart
+  * Add to cart functionality
+  * Update quantity / remove items
+  * Persistent cart behavior
+* 📦 Order Management
+  * Place orders
+  * Track orders (basic)
+* 🔐 Admin Control
+  * Manage users/vendors
+  * Moderate vendors/products
+
+
+## 🧠 Concept Behind This Project
+
+Multi-vendor platforms are more complex than single-store e-commerce because:
+
+* Each vendor manages their own inventory
+* The platform handles:
+  * commissions
+  * order distribution
+  * unified checkout
+
+This project is a simplified implementation of that architecture.
+
+
+## 🛠️ Tech Stack
+
+(Update this based on your actual repo stack if needed)
+
+* Frontend: Next.js , Redux-Toolkit, Axios and TypeScript
+* Backend: Node.js / Express , NextAuth, Cloudinary and Nodemailer
+* Database: MongoDB(mongoose)
+* Payment Integration: Stripe
+
+
+## Installation & Setup
+
+### 1. Clone the repository
+
+```Bash
+git clone https://github.com/Viku4780/multivendor-cart.git
+cd multivendor-cart
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```Bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Setup environment variables
 
-## Learn More
+Create a .env file:
 
-To learn more about Next.js, take a look at the following resources:
+```env.local
+MONGODB_URL=your_mongodb_url
+AUTH_SECRET=fkfoet3454sta0d52M2W5S
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+CLOUDINARY_CLOUD_NAME=cloudinary_cloud_name
+CLOUDINARY_API_KEY=cloudinary_api_key
+CLOUDINARY_API_SECRET=cloudinary_api_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+NEXT_BASE_URL=http://localhost:3000
+STRIPE_WEBHOOK_SECRET=
+GMAIL_USER=your_gmail
+GMAIL_APP_PASSWORD=your_gmail_password
+GEMINI_API_KEY=your_gemini_api_key
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. Run the project
 
-## Deploy on Vercel
+```Bash
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔮 Future Improvements
+* 🧾 Invoice generation
+* 📦 Advanced order tracking
+* ⭐ Product reviews & ratings
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+```
+# Fork the repo
+# Create a new branch
+git checkout -b feature-name
+
+# Commit changes
+git commit -m "Added new feature"
+
+# Push
+git push origin feature-name
+```
+
+Then open a Pull Request
+
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+
+## 🙌 Acknowledgements
+* Inspired by real-world marketplaces like Amazon, Flipkart
+* Built as a learning project for mastering full-stack development
+
+
+## Author
+Vikrant Kumar
+* Github: https://github.com/Viku4780
+
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
